@@ -14,7 +14,7 @@ source:
       - d485a54ac2b07b7349dabd833961415315a18fea.patch  # [win]
 
 build:
-  number: 1
+  number: 2
   # linux32: https://github.com/01org/mkl-dnn/issues/171
   # vc<14: pre-c99 era :'(
   skip: True  # [not x86_64]
@@ -25,7 +25,6 @@ requirements:
     - {{ compiler('cxx') }}
     - cmake >=2.8.0
     - patch       # [not win]
-    - m2-patch    # [win]
   host:
     - intel-openmp
     - mklml
