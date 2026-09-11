@@ -6,7 +6,7 @@ package:
 
 source:
   - url: https://github.com/intel/mkl-dnn/archive/v{{ version }}.tar.gz
-    sha256: ba39da6adb263df05c4ca2a120295641fc97be75b588922e4274cb628dbe1dcd
+    sha256: a7e64e07a5db1c42d72a23bea4acd04fd0c162e27af0b8b8f38ca48b6b5d9999
     patches:
       - 0001-Add-MKL_ROOT-bin-directory-for-DLLs.patch
       # fix for error LNK2001: unresolved external symbol
