@@ -22,9 +22,9 @@ build:
 
 requirements:
   build:
+    - {{ stdlib('c') }}
     - {{ compiler('cxx') }}
     - cmake >=2.8.0
-    - patch       # [not win]
   host:
     - intel-openmp
     - mklml
